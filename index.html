@@ -12,6 +12,7 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Tenor+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&&display=swap');
 
     * {
         margin: 0;
@@ -21,20 +22,20 @@
     body {
         overflow-x: hidden;
         overflow-y: hidden;
-        background-color: #ebeff3;
+        background-color: #eaedf2;
     }
 
     #name {
         position: absolute;
-        font-family: "Tenor Sans", sans-serif;
+        font-family: "Rubik", sans-serif;
         font-weight: 400;
         font-style: normal;
-        color: #29588b;
-        background-color: #ebeff3;
+        color: #0055a5;
+        background-color: #eaedf2;
         width: fit-content;
         opacity: 0;
         border-radius: 5px;
-        border: 2px solid #29588b;
+        border: 2px solid #0055a5;
         padding: 0px 5px;
         font-size: 1rem;
 
@@ -45,42 +46,42 @@
 
     .county {
     fill: white;
-    stroke: #6e7b92;
+    stroke: #939598;
     stroke-width: .18px;
     transition: fill 0.6s ease-in-out;
     }
 
     .state-border {
         fill: none;
-        stroke: #221e1f;
+        stroke: #565859;
         stroke-width: .89px;
       }
 
     .county {
     fill: white;
-    stroke: #c9c9c9;
+    stroke: #c5c8cc;
     stroke-width: .18px;
     transition: fill 0.6s ease-in-out;
     }
 
     .county:hover {
-        fill: #d7dee7;
-        stroke: #6e7b92;
+        fill: #c5c8cc;
+        stroke: #939598;
         transition: fill 0.3s ease-out;
     }
 
     /* This class will override the `county` class for elements that have both `county` and `covered` */
     .county.covered {
-        fill: #29588b!important;
-        stroke: #80A8D2;
+        fill: #0055a5!important;
+        stroke: #9fd0ff;
         transition: fill 0.6s ease-in-out;
     }
     
 
 
     .county.covered:hover {
-        fill: #3f8bdd !important;
-        stroke: #80A8D2;
+        fill: #006bd0 !important;
+        stroke: #9fd0ff;
         transition: fill 0.6s ease-in-out;
     }
 
