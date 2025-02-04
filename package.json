@@ -1,0 +1,19 @@
+{
+  "name": "dec-construction",
+  "version": "1.0.0",
+  "description": "Code used for the decconstruction.com website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/81-Shop-Projects/dec-construction.git"
+  },
+  "author": "Ellis Osen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/81-Shop-Projects/dec-construction/issues"
+  },
+  "homepage": "https://github.com/81-Shop-Projects/dec-construction#readme"
+}
