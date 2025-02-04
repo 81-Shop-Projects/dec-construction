@@ -1,23 +1,21 @@
-// js/main.js
+document.querySelectorAll(".county").forEach((e) => {
+  e.addEventListener("mouseover", function () {
+    window.onmousemove = function (j) {
+      const x = j.clientX;
+      const y = j.clientY;
+      document.getElementById("name").style.top = y + 10 + "px";
+      document.getElementById("name").style.left = x + 10 + "px";
+    };
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Example: If you have an inline SVG with id "map", you can select and work with it:
-  const svgMap = document.getElementById("map");
-
-  // Add event listeners to paths or elements inside the SVG:
-  // (Make sure your SVG paths have classes or IDs so you can target them)
-  const counties = svgMap.querySelectorAll("path.county");
-  counties.forEach((county) => {
-    county.addEventListener("click", () => {
-      // For example, toggle a class when a county is clicked.
-      county.classList.toggle("active");
-    });
+    document.getElementById("name").style.opacity = 1;
+    document.getElementById("name-text").innerText = e.id;
   });
 
-  // Or if you want to load an external SVG file into a container:
-  // fetch('svg-map.svg')
-  //   .then(response => response.text())
-  //   .then(svgContent => {
-  //     document.getElementById("svg-container").innerHTML = svgContent;
-  //   });
+  e.addEventListener("mouseleave", function () {
+    document.getElementById("name").style.opacity = 0;
+  });
+
+  e.addEventListener("click", function () {
+    getUser(e.id);
+  });
 });
