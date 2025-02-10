@@ -6,7 +6,7 @@
     const cssLink = document.createElement("link");
     cssLink.rel = "stylesheet";
     cssLink.href =
-      "https://cdn.jsdelivr.net/gh/81-Shop-Projects/dec-construction@main/bakery/baker.css";
+      "https://cdn.jsdelivr.net/gh/81-Shop-Projects/dec-construction@2afeddd/bakery/bakery.css";
     document.head.appendChild(cssLink);
 
     // 2. Add Google Tag Manager script in the <head>
