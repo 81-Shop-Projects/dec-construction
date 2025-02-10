@@ -5,7 +5,8 @@
     // 1. Add your CSS to the page
     const cssLink = document.createElement("link");
     cssLink.rel = "stylesheet";
-    cssLink.href = "/bakery.css"; // URL to your hosted CSS file
+    cssLink.href =
+      "https://cdn.jsdelivr.net/gh/81-Shop-Projects/dec-construction@main/bakery/baker.css";
     document.head.appendChild(cssLink);
 
     // 2. Add Google Tag Manager script in the <head>
